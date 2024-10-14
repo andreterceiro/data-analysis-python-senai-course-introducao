@@ -191,3 +191,13 @@ print(my_list) # retorna [10, 4, 2]
 ```
 
 Uma nova lista **não** é gerada!
+
+Como esperado, `[:]` exclui todos elementos da lista:
+
+```
+lst = [1,2,3]
+del lst [:] # list agora será igual a []
+print(lst) # retorna []
+del lst # assim eu excluo a lista e não seus elementos
+print(lst) # Erro!
+```
