@@ -115,4 +115,16 @@ print(a) # [0,2]
 O curso fala de ordenação pelo método bolha. Como eu lembro isto do curso técnico (que ocorreu há mais de 20 anos kkk), eu fiquei com vontade de implementar. Eu implementei [aqui](https://github.com/andreterceiro/bubble-sort-python).
 
 
+## Listas copiadas por referência
+
+As listas são copiadas por referência. O trecho abaixo retorna `[2]`
+
+```
+list_1 = [1]
+list_2 = list_1
+list_1 [0] = 2
+print(list_2)
+```
+
+
 
