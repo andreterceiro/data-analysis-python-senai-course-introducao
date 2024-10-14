@@ -289,3 +289,26 @@ for elemento in lista:
 # 5
 # 6
 ```
+
+
+## Mais sobre fatiamento
+
+Lembre-se que no fatiamento trabalhamos com os **índices**, logo `lst[1]` refere-se ao segundo elemento de uma lista. Para mostrar todos elementos da lista devemos começar no 0.
+
+```
+my_list = [17, 3, 11, 5, 1, 9, 7, 15, 13]
+ 
+for i in my_list[0:]:
+    print(i)
+```
+
+Imprime:
+17
+3
+11
+5
+1
+9
+7
+15
+13
