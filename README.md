@@ -5,12 +5,14 @@ Eu colocarei anotações aqui de alguns tópicos que eu não achar tão óbvios 
 
 ## Precedência:
 
+```
 P => ()
 E => **
 M => *
 D => /
 A => +
 S => -
+```
 
 ![precedencia](images/precedencia.png)
 
