@@ -201,3 +201,19 @@ print(lst) # retorna []
 del lst # assim eu excluo a lista e não seus elementos
 print(lst) # Erro!
 ```
+
+
+## in e not in em listas
+
+```
+my_list = [0, 3, 12, 8, 2]
+
+print(5 in my_list)
+print(5 not in my_list)
+print(12 in my_list)
+
+# Retorna
+# False
+# True
+# True
+```
