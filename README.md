@@ -110,6 +110,9 @@ print(a) # [0,2]
 ```
 
 
+## Ordenação pelo método bolha
+
+O curso fala de ordenação pelo método bolha. Como eu lembro isto do curso técnico (que ocorreu há mais de 20 anos kkk), eu fiquei com vontade de implementar. Eu implementei [aqui](https://github.com/andreterceiro/bubble-sort-python).
 
 
 
