@@ -328,3 +328,16 @@ del list_1
  
 print(list_3) # Imprime [B, C]
 ```
+
+
+# Compreensão de listas
+
+```
+row = ["banana" for i in range(8)]
+print(row)
+
+# Imprime:
+['banana', 'banana', 'banana', 'banana', 'banana', 'banana', 'banana', 'banana']
+
+# Lembre-se, range(8) retorna um range, mas semelhante a um array indo de 0 a 7
+```
