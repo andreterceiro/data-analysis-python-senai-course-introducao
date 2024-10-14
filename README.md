@@ -341,3 +341,26 @@ print(row)
 
 # Lembre-se, range(8) retorna um range, mas semelhante a um array indo de 0 a 7
 ```
+
+
+## Arrays multidimensionais com for ... in ...
+
+Python tem uma sintaxe estranha para criar um array multidimensional com `for ... in ...`:
+
+```
+row = [["banana" for i in range(8)] for j in range(6)]
+   
+print(row)
+
+# Imprime:
+# [
+#     ['banana', 'banana', 'banana', 'banana', 'banana', 'banana', 'banana', 'banana'], 
+#     ['banana', 'banana', 'banana', 'banana', 'banana', 'banana', 'banana', 'banana'], 
+#     ['banana', 'banana', 'banana', 'banana', 'banana', 'banana', 'banana', 'banana'], 
+#     ['banana', 'banana', 'banana', 'banana', 'banana', 'banana', 'banana', 'banana'], 
+#     ['banana', 'banana', 'banana', 'banana', 'banana', 'banana', 'banana', 'banana'], 
+#     ['banana', 'banana', 'banana', 'banana', 'banana', 'banana', 'banana', 'banana'], 
+# ]
+```
+
+Imprime em uma única linha, só formatei assim para facilitar a visualização. Veja, acima temos 8 elementos dentro de cada linha e 6 linhas, não confundir.
