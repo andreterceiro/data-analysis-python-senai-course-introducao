@@ -217,3 +217,75 @@ print(12 in my_list)
 # True
 # True
 ```
+
+
+# Falando um pouco sobre o "for"
+
+O básico de uma iteração com **"for"** é:
+
+```
+lista = [4,5,6]
+for elemento in lista:
+    print(elemento)
+```
+
+Imprime:
+
+4
+5
+6
+
+Com **enumerate(lista)** conseguimos ter acesso ao **índice** em um loop semelhante, veja:
+
+```
+lista = [4,5,6]
+for idx, elemento in enumerate(lista):
+    print(str(idx) + ": " + str(elemento))
+```
+
+Imprime:
+
+0: 4
+1: 5
+2: 6
+
+Curiosidade, veja o *snippet* abaixo:
+
+```
+lista = [4,5,6]
+print(enumerate(lista))
+```
+
+Retorna por exemplo:
+
+<enumerate object at 0x7f41f1211500>
+
+**Atenção:** não se pode fazer:
+
+```
+lista = [4,5,6]
+print(enumerate(lista))
+print(enumerate[0]) # Erro!!!!!!!!!!!!!
+```
+
+Lembre-se que a função, por exemplo com os parâmetros start e stop, retorna:
+
+```
+lista = range(4, 7)
+print(lista) # retorna range(4, 7)
+print(lista[0]) # retorna 4 - primeiro elemento
+print(lista[-1]) # retorna 6 - último elemento
+```
+
+De vez em quando vemos um `for` com um `range`. Funciona como o esperado:
+
+```
+lista = range(4, 7)
+for elemento in lista:
+    print(elemento)
+
+# Imprime
+# 4
+# 5
+# 6
+```
