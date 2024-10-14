@@ -96,7 +96,7 @@ Se não tiver o break, ele inverte e “desinverte” depois.
 
 del pode ser usado em listas ou em escalares:
 
-``
+```
 a = 1
 del a
 print(a) # Erro !!
