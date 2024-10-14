@@ -17,22 +17,29 @@ S => -
 ## Métodos de listas
 
 Devo estar atento que posso fazer determinadas coisas em listas por métodos, como
+
+```
 a = [0,1,2]
 a.append(3)
 print(a) # [0,1,2,3]
+```
 
 E outras por palavras chave da linguagem:
+```
 del a[1]
 print(a) # [0,2,3]
+```
 
 del a[1] pode ser chamado como função (= del(a[1]))
 
 O método insert também insere, mas precisa da posição (PRECISA ser passado este argumento):
 list.insert(location, value)
 
+```
 a = [1,3]
 a.insert(1, 2)
 print(a) # [1,2,3]
+```
 
 Atenção! O insert EMPURRA os demais valores, não sobrescreve. Reforçando:
 
