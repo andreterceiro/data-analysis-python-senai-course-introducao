@@ -161,3 +161,13 @@ my_list = [10, 8, 6, 4, 2]
 new_list = my_list[-3:-1]
 print(new_list) # [6, 4]
 ```
+
+Mas como então falo que quero o **último** elemento de uma lista?
+
+Bem, o último elemento no fatiamento pode ser omitido:
+
+```
+my_list = [10, 8, 6, 4, 2]
+new_list = my_list[1:]
+print(new_list) # [8, 6, 4, 2]
+```
