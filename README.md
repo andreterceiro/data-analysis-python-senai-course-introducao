@@ -12,6 +12,7 @@ D => /
 A => +
 S => -
 
+![precedencia](images/precedencia.png)
 
 ## Métodos de listas
 
@@ -74,6 +75,8 @@ E range(-1), com um número negativo como parâmetro, dá erro
 
 É possível fazer isto para trocar o valor de duas variáveis:
 variable_1, variable_2 = variable_2, variable_1
+
+![operador inversao valores de variaveis](images/operador-inversao-valores-variaveis.png)
 
 Este script inverte a lista, mas por causa do break:
 
