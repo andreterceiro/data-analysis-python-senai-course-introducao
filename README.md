@@ -126,5 +126,24 @@ list_1 [0] = 2
 print(list_2)
 ```
 
+Mas podemos fazer uma copia dos valores e gerar uma nova lista, como no *snippet* abaixo:
 
+```
+list_1 = [1]
+list_2 = list_1[:]
+list_1[0] = 2
+print(list_2)
+```
 
+Isto é chamado de **fatiamento** ou **slicing**.
+
+Desta forma podemos copiar apenas parte de uma lista, como no *snippet* abaixo:
+
+```
+# Copiando parte da lista.
+my_list = [10, 8, 6, 4, 2]
+new_list = my_list [1 : 3]
+print(new_list) # [8, 6]
+```
+
+O formato é `[start: end]`, mas **end** é o primeiro elemento **não** incluso, como você pode deduzir do código acima.
