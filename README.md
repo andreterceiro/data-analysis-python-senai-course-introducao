@@ -364,3 +364,21 @@ print(row)
 ```
 
 Imprime em uma única linha, só formatei assim para facilitar a visualização. Veja, acima temos 8 elementos dentro de cada linha e 6 linhas, não confundir.
+
+
+## For ... else
+
+Como último "suspiro" de uma iteração, podemos colocar nela um bloco "`else`":
+
+```
+for element in range(0,3):
+    print(element)
+else:
+    print("final")
+```
+
+Imprime:
+0
+1
+2
+final
