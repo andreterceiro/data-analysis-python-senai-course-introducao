@@ -171,3 +171,13 @@ my_list = [10, 8, 6, 4, 2]
 new_list = my_list[1:]
 print(new_list) # [8, 6, 4, 2]
 ```
+
+Podemos omitir também o índice de início do fatiamento. Veja:
+
+```
+my_list = [10, 8, 6, 4, 2]
+new_list = my_list[:2]
+print(new_list) # [10, 8]
+```
+
+Veja que da mesma forma que quando queremos retornar o último elemento e ocultamos o final no fatiamento (veja 2 exemplos de código acima), se ocultarmos o início do fatiamento, ele começa a retornar a partir do primeiro elemento.
