@@ -312,3 +312,19 @@ Imprime:
 7
 15
 13
+
+
+# del em listas apontando para o mesmo lugar
+
+Veja que quando excluímos uma lista, na verdade estamos excluindo o apontamento para ela. Ou seja, se existirem demais apontamentos para a lista, eles poderão continuar vendo a lista **mesmo que o primeiro apotamento seja removido**:
+
+```
+list_1 = ["A", "B", "C"]
+list_2 = list_1
+list_3 = list_2
+ 
+del list_2[0]
+del list_1
+ 
+print(list_3) # Imprime [B, C]
+```
