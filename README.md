@@ -147,3 +147,17 @@ print(new_list) # [8, 6]
 ```
 
 O formato é `[start: end]`, mas **end** é o primeiro elemento **não** incluso, como você pode deduzir do código acima.
+
+No fatiamento podemos até trabalhar com números negativos. Números negativos fazem a contagem de elementos da lista de trás para frente. **-1** refere-se ao último elemento, mas lembre-se, **o último elemento não é incluído no retorno.**
+
+Exemplos:
+
+```
+my_list = [10, 8, 6, 4, 2]
+new_list = my_list[1:-1]
+print(new_list) # [8, 6, 4]
+
+my_list = [10, 8, 6, 4, 2]
+new_list = my_list[-3:-1]
+print(new_list) # [6, 4]
+```
