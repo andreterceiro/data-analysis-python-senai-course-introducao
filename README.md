@@ -831,3 +831,18 @@ print(a) # Imprime (0,)
 print(a == 0) # Imprime False
 print (type(a)) # Imprime <class 'tuple'>
 ```
+
+Verificações de determinados operadores em tuplas:
+
+```
+my_tuple = (1, 10, 100)
+
+t1 = my_tuple + (1000, 10000)
+t2 = my_tuple * 3
+
+print(len(t2)) # Imprime 9
+print(t1) # Imprime [1, 10, 100, 1000, 10000]
+print(t2) # Imprime [1, 10, 100, 1, 10, 100, 1, 10, 100]
+print(10 in my_tuple) # Imprime True
+print(-10 not in my_tuple) # Imprime True
+```
