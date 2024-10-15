@@ -587,3 +587,127 @@ Eu tenho 2
 ```
 
 Era o comportamento que se esperava, mas é importante reforçar kkk.
+
+Mas veja que não é tão simples:
+
+```
+def my_function(my_list_1):
+    print("Print #1:", my_list_1)
+    print("Print #2:", my_list_2)
+    del my_list_1[0] # Pay attention to this line.
+    print("Print #3:", my_list_1)
+    print("Print #4:", my_list_2)
+
+my_list_2 = [2, 3]
+my_function(my_list_2)
+print("Print #5:", my_list_2)
+```
+
+A saída é:
+
+```
+Print #1: [2, 3]
+Print #2: [2, 3]
+Print #3: [3]
+Print #4: [3]
+Print #5: [3]
+```
+
+Neste caso eu alterei sim a variável passada como parâmetro.
+
+E se eu adcionar um valor à lista?
+
+```
+def my_function(my_list_1):
+    print("Print #1:", my_list_1)
+    print("Print #2:", my_list_2)
+    my_list_2.append(3)
+    print("Print #3:", my_list_1)
+    print("Print #4:", my_list_2)
+
+my_list_2 = [2, 3]
+my_function(my_list_2)
+print("Print #5:", my_list_2)
+```
+
+Mesma coisa, alterei uma variável do escopo global, veja:
+
+```
+Print #1: [2, 3]
+Print #2: [2, 3]
+Print #3: [2, 3, 3]
+Print #4: [2, 3, 3]
+Print #5: [2, 3, 3]
+```
+
+E em relação a alterar 1 item?
+
+```
+def my_function(my_list_1):
+    print("Print #1:", my_list_1)
+    print("Print #2:", my_list_2)
+    my_list_1[0] = 99
+    print("Print #3:", my_list_1)
+    print("Print #4:", my_list_2)
+
+my_list_2 = [2, 3]
+my_function(my_list_2)
+print("Print #5:", my_list_2)
+```
+
+Mesma coisa, consegui alterar o conteúdo de uma variável que está no escopo global, veja a saída:
+
+```
+Print #1: [2, 3]
+Print #2: [2, 3]
+Print #3: [99, 3]
+Print #4: [99, 3]
+Print #5: [99, 3]
+```
+
+Vamos fazer um teste com uma lista que não seja passada como parâmetro:
+
+```
+def my_function():
+    print("Print #1:", my_list_2)
+    my_list_2[0] = 98
+    my_list_2.append(99)
+    del my_list_2[1]
+    print("Print #2:", my_list_2)
+
+my_list_2 = [2, 3]
+my_function()
+print("Print #3:", my_list_2)
+```
+
+Saída:
+
+```
+Print #1: [2, 3]
+Print #2: [98, 99]
+Print #3: [98, 99]
+```
+
+Ou seja, eu altero uma lista, que não é um escalar, do escopo global, passada como parâmetro ou não, se eu excluir, adicionar ou alterar um item da lista, mas se eu modificar a lista como um todo, simplesmente é mudado o apontamento. É o mesmo comportamento de eu ter 2 listas no escopo global e alterar uma, veja:
+
+```
+my_list_1 = [0,1,2]
+my_list_2 = my_list_1
+my_list_2[0] = 99
+print(my_list_1)
+print(my_list_2)
+my_list_2 = "banana"
+print(my_list_1)
+print(my_list_2)
+```
+
+Saída:
+
+```
+[99, 1, 2]
+[99, 1, 2]
+[99, 1, 2]
+banana
+```
+
+Ou seja, se eu alterar 1 item, altero de todas as varíaveis que tem o apontamento para a mesma lista, mas se eu alterar o **conteúdo todo** da variável, o apontamento novo muda, mas o antigo continua apontando para a mesma lista.
