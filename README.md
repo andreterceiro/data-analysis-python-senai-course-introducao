@@ -711,3 +711,20 @@ banana
 ```
 
 Ou seja, se eu alterar 1 item, altero de todas as varíaveis que tem o apontamento para a mesma lista, mas se eu alterar o **conteúdo todo** da variável, o apontamento novo muda, mas o antigo continua apontando para a mesma lista.
+
+
+## Diversos
+
+Criei a função abaixo para calcular um fatorial (em menos de 3 minutos kkk):
+
+```
+def factorial(number):
+    total = 1
+    while number > 1:
+        total *= number
+        number = number - 1
+
+    return total
+```
+
+Testei com números aleatórios e deu certo :)
