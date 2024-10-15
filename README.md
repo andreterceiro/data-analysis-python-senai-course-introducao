@@ -538,7 +538,7 @@ print(var)
 Isto gerará um erro de que a variável foi usada antes de ser declarada.
 
 
-## palavra chave 'global'
+## Palavra chave 'global'
 
 Vamos modificar um pouco o *snippet* anterior:
 
@@ -561,3 +561,29 @@ Oi 1
 Oi 2
 2
 ```
+
+
+## Posso alterar uma variável passada como argumento?
+
+Veja o código abaixo:
+
+```
+def my_function(n):
+    print("Eu obtive", n)
+    n += 1
+    print("Eu tenho", n)
+
+var = 1
+my_function(var)
+print(var)
+```
+
+A saída é:
+
+```
+Eu obtive 1
+Eu tenho 2
+1
+```
+
+Era o comportamento que se esperava, mas é importante reforçar kkk.
