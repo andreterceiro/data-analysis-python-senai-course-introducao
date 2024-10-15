@@ -846,3 +846,10 @@ print(t2) # Imprime [1, 10, 100, 1, 10, 100, 1, 10, 100]
 print(10 in my_tuple) # Imprime True
 print(-10 not in my_tuple) # Imprime True
 ```
+
+Veja que usar os operadores de soma e multiplicação funciona da mesma forma com listas:
+
+```
+print([0,1] + [0,1])
+print([0,1] * 3)
+```
