@@ -733,3 +733,37 @@ def factorial(number):
 ```
 
 Testei com números aleatórios e deu certo :)
+
+Fiz uma função sem muito cuidado de otimização, rascunhão, rapidão, para calcular o *Fibonacci* de um número até 100, usando um "listão" que poderia com certeza ser otimizado:
+
+```
+def fib(n):
+    i = 0
+    numbers = []
+    if n > 100:
+        raise Exception("O número precisa ser menor que 100")
+
+    while i <= 101:
+        if i == 0 or i == 1:
+             numbers.append(1)
+        else:
+            numbers.append(numbers[i - 1] + numbers[i - 2])
+
+        if i - 1 == n:
+            return numbers[i]
+        
+        i += 1
+
+print(fib(100))
+```
+
+Uma coisa interessante que reparei é que não é como PHP onde eu posso informar um índice que ainda não foi criado. Eu preciso primeiro inserir um valor na posição para usa-la, logo:
+
+```
+a = [0, 1]
+a.append(2)
+print(a)
+
+a[3] = 3 # Dá erro, pois ainda não existe nada nesta posição da lista
+         # Eu preciso primeiro fazer por exemplo um insert ou um append 
+```
