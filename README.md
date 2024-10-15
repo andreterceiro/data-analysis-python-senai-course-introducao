@@ -789,3 +789,17 @@ def factorial_function(n):
         return 1
     return n * factorial_function(n - 1)
 ```
+
+
+## Tuplas
+
+Uma tupla não tem o método append():
+
+```
+a = [0, 1]
+a.append(2)
+print(a) # print [0 , 1, 2]
+a = (0, 1)
+a.append(2) # Erro !
+print(a)
+```
