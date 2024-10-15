@@ -719,6 +719,11 @@ Criei a função abaixo para calcular um fatorial (em menos de 3 minutos kkk):
 
 ```
 def factorial(number):
+    if n < 0:
+        return None
+    if n < 2:
+        return 1
+
     total = 1
     while number > 1:
         total *= number
