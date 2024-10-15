@@ -395,6 +395,12 @@ final
 
 ## Funções
 
+
+### Parâmetros
+
+
+#### Geral
+
 Quanto aos parâmetros, sem "novidades":
 
 - Pode existir um valor padrão;
@@ -408,4 +414,23 @@ message("456")
 
 # Imprime:
 # 123 456
+```
+
+
+#### Passando o nome de um parâmetro
+
+
+```
+def introduction(first_name, last_name):
+    print("Olá meu nome é", first_name, last_name)
+ 
+introduction(first_name = "James", last_name = "Bond")
+introduction(last_name = "Skywalker", first_name = "Luke")
+```
+
+Isto imprime:
+
+```
+Olá meu nome é James Bond
+Olá meu nome é Luke Skywalker
 ```
