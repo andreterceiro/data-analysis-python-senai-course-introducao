@@ -798,8 +798,15 @@ Uma tupla não tem o método append():
 ```
 a = [0, 1]
 a.append(2)
-print(a) # print [0 , 1, 2]
+print(a) # imprime [0, 1, 2]
 a = (0, 1)
 a.append(2) # Erro !
 print(a)
+```
+
+Posso criar uma tupla sem colocar os parênteses:
+
+```
+a = 0, 1
+print(a) # imprime (0, 1)
 ```
