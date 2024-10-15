@@ -466,3 +466,8 @@ def soma(a=1, b):
 # Pode não ter nada errado na declaração da função HIPOTETICAMENTE, mas chamá-la assim não funciona
 adding(a=2, b=3, 1) # Não funciona, pois o positional argument deve vir primeiro que o keyword argument
 ```
+
+
+## Curiosidades sobre o None
+
+None não pode ser somado a nada, nem a None mesmo.
