@@ -471,3 +471,5 @@ adding(a=2, b=3, 1) # Não funciona, pois o positional argument deve vir primeir
 ## Curiosidades sobre o None
 
 None não pode ser somado a nada, nem a None mesmo.
+
+Se uma função explicitamente não retornar nada, ela retornará None por padrão.
