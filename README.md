@@ -853,3 +853,18 @@ Veja que usar os operadores de soma e multiplicação funciona da mesma forma co
 print([0,1] + [0,1])
 print([0,1] * 3)
 ```
+
+Lembre-se, não podemos incluir mais um item na tupla, mas podemos trocar a variável da tupla como um todo:
+
+```
+a = (0, 1)
+b = (2, 3)
+
+a, b = b, a
+
+print(a, b) # Imprime (2, 3) (0, 1)
+
+b = 4
+
+print(a, b) # Imprime (2, 3) 4
+```
