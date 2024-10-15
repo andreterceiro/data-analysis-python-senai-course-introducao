@@ -868,3 +868,17 @@ b = 4
 
 print(a, b) # Imprime (2, 3) 4
 ```
+
+
+## Dicionários
+
+Chaves podem ser inteiros ou floats:
+
+```
+a = {1: "um", "um": 1, 1.1: "un ponto um"}
+print(a)
+print(a[1]) # Imprime "um"
+print(a['um']) # Imprime 1
+print(a[1.1]) # Imprime "um ponto um"
+print(a['1']) # Key error
+```
