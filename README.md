@@ -473,3 +473,66 @@ adding(a=2, b=3, 1) # Não funciona, pois o positional argument deve vir primeir
 None não pode ser somado a nada, nem a None mesmo.
 
 Se uma função explicitamente não retornar nada, ela retornará None por padrão.
+
+
+## Escopo
+
+Veja que código interessante:
+
+```
+def my_function():
+    print("Eu conheço aquela variável?", var)
+
+var = 1
+my_function()
+print(var)
+```
+
+É impresso "Eu conheço aquela variável?, 1". Ou seja, eu consigo acessar váriáveis externas a uma função dentro de uma função. Vou testar o inverso:
+
+```
+def my_function():
+    var = 1
+    print("Oi")
+
+my_function()
+print(var)
+```
+
+Erro, ou seja, o inverso não é verdadeiro, no escopo global eu não posso acessar uma variável declarada dentro de uma função.
+
+Vamos testar se conseguimos alterar uma variável do escopo global por dentro de uma função:
+
+
+```
+def my_function():
+    var = 2
+    print("Oi", var)
+
+var = 1
+my_function()
+print(var)
+```
+
+Não, o valor não é alterado no escopo global... Mas no escopo da função é sim, tanto que a linha
+
+```
+print("Oi", var)
+```
+
+Imprimiu "Oi 2", mas o `print(var)` do final, após a alteração dentro do escopo da função, imprimiu 1.
+
+E se eu imprimir o valor antes da variável ser alterada, algo como:
+
+```
+def my_function():
+    print("Oi", var)
+    var = 2
+    print("Oi", var)
+
+var = 1
+my_function()
+print(var)
+```
+
+Isto gerará um erro de que a variável foi usada antes de ser declarada.
