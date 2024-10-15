@@ -536,3 +536,28 @@ print(var)
 ```
 
 Isto gerará um erro de que a variável foi usada antes de ser declarada.
+
+
+## palavra chave 'global'
+
+Vamos modificar um pouco o *snippet* anterior:
+
+```
+def my_function():
+    global var
+    print("Oi", var)
+    var = 2
+    print("Oi", var)
+
+var = 1
+my_function()
+print(var)
+```
+
+Nenhum erro ocorre e eu consegui alterar a variável global. A saída é:
+
+```
+Oi 1
+Oi 2
+2
+```
