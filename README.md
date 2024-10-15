@@ -810,3 +810,15 @@ Posso criar uma tupla sem colocar os parênteses:
 a = 0, 1
 print(a) # imprime (0, 1)
 ```
+
+Parece meio bizarro, mas para se criar uma tupla com um único elemento deve se colocar uma vírgula no final, veja:
+
+```
+a = (0)
+print(a) # Imprime 0
+print(a == 0) # Imprime True
+
+a = (0,) 
+print(a) # Imprime (0,)
+print(a == 0) # Imprime False
+```
