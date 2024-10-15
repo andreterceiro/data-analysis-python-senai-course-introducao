@@ -391,3 +391,21 @@ Imprime:
 1
 2
 final
+
+
+## Funções
+
+Quanto aos parâmetros, sem "novidades":
+
+- Pode existir um valor padrão;
+- Argumentos sem valor padrão devem vir no final;
+
+```
+def message(text2, text1="123"):
+    print(text1, text2)
+
+message("456")
+
+# Imprime:
+# 123 456
+```
