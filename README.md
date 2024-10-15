@@ -434,3 +434,22 @@ Isto imprime:
 Olá meu nome é James Bond
 Olá meu nome é Luke Skywalker
 ```
+
+
+#### Misturando keyword com positional arguments:
+
+Podemos fazer testes estranhos (kkk):
+
+```
+def adding(a, b, c):
+    print(a, "+", b, "+", c, "=", a + b + c)
+
+adding(1, 2, 3) # Obviamente funciona, imprime '1+2+3=6'
+adding(1, c=2, b=3) # Obviamente funciona, imprime '1+3+2=6'
+adding(1, b=2) # Não funciona, pois falta o parâmetro 'c'
+adding(a=2, b=3, 1) # Não funciona, pois o positional argument deve vir primeiro que o keyword argument
+adding(2, 3, a=1) # Não funciona, pois temos múltiplos valores para 'a'
+adding(2, 3, a=1, c=4) # Não funciona, pois temos múltiplos valores para 'a'
+adding(2, 3, 4, d=5) # Não funciona, pois só temos 3 parâmetros
+adding(1, 2, 3, 4) # Não funciona, pois só temos 3 parâmetros
+```
