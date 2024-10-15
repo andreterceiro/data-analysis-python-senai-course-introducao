@@ -767,3 +767,14 @@ print(a)
 a[3] = 3 # Dá erro, pois ainda não existe nada nesta posição da lista
          # Eu preciso primeiro fazer por exemplo um insert ou um append 
 ```
+
+Uma versão mais otimizada e genérica para o *Fibonacci* seria:
+
+```
+def fib(n):
+    if n < 1:
+        return None
+    if n < 3:
+        return 1
+    return fib(n - 1) + fib(n - 2)
+```
