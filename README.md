@@ -822,3 +822,12 @@ a = (0,)
 print(a) # Imprime (0,)
 print(a == 0) # Imprime False
 ```
+
+E como eu crio uma tupla de um único elemento sem parênteses? Da mesma forma!
+
+```
+a = 0, 
+print(a) # Imprime (0,)
+print(a == 0) # Imprime False
+print (type(a)) # Imprime <class 'tuple'>
+```
