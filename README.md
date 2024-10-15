@@ -453,3 +453,16 @@ adding(2, 3, a=1, c=4) # Não funciona, pois temos múltiplos valores para 'a'
 adding(2, 3, 4, d=5) # Não funciona, pois só temos 3 parâmetros
 adding(1, 2, 3, 4) # Não funciona, pois só temos 3 parâmetros
 ```
+
+** Um detalhe é que o `positional argument` deve vir antes do `keyword argument` 
+
+Na declaração de funções, os argumentos com um valor padrão devem vir depois dos arqumentos sem um valor padrão.
+
+```
+# Não funciona, um argumento com valor padrão está vindo antes de um argumento sem um valor padrão
+def soma(a=1, b):
+    return a + b
+
+# Pode não ter nada errado na declaração da função HIPOTETICAMENTE, mas chamá-la assim não funciona
+adding(a=2, b=3, 1) # Não funciona, pois o positional argument deve vir primeiro que o keyword argument
+```
