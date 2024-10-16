@@ -1332,6 +1332,20 @@ SyntaxError: closing parenthesis '}' does not match opening parenthesis '('
 Sobre [capturar um syntax error](https://stackoverflow.com/questions/25049498/failed-to-catch-syntax-error-python).
 
 
+Eu posso capturar mais de uma exceção em um `except`, veja:
+
+```
+while True:
+    try:
+        number = int(input("Digite um número int: "))
+        print(5/number)
+        break
+    except (ValueError, ZeroDivisionError):
+        print("Valor errado ou nenhuma divisão por regra de zero quebrada.")
+    except:
+        print("Desculpe, algo deu errado...")
+``
+
 ## IDLE
 
 IDLE = Integrated Development and Learning Environment.
