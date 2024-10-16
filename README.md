@@ -1080,3 +1080,27 @@ for key in pol_eng_dictionary:
 # Pol/Eng -> woda
 # Pol/Eng -> gleba
 ```
+
+Quando usamos `in` em um dicionário, ele estará relacionado às **chaves**:
+
+```
+pol_eng_dictionary = {
+    "zamek": "castelo",
+    "woda": "água",
+    "gleba": "solo"
+    }
+ 
+if "zamek" in pol_eng_dictionary:
+   print("Sim")
+else:
+   print("Não")
+
+if "solo" in pol_eng_dictionary:
+   print("Sim")
+else:
+   print("Não")
+
+# Imprime
+# Sim
+# Não
+```
