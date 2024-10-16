@@ -1030,3 +1030,5 @@ print(item_1) # saídas: solo
 item_2 = pol_eng_dictionary.get("woda") # ex. 2
 print(item_2) # saídas: água
 ```
+
+Mas podemos obter os dados no formato `dicionario[chave]` como fazemos no caso de listas ou tuplas.
