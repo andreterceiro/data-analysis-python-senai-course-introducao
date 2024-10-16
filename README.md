@@ -1063,3 +1063,20 @@ for key, value in pol_eng_dictionary.items():
 # Pol/Eng -> woda : água
 # Pol/Eng -> gleba : solo
 ```
+
+Uma iteração "normal" envolvendo dicionários **dá acesso aos índices e não aos valores**:
+```
+pol_eng_dictionary = {
+    "zamek": "castelo",
+    "woda": "água",
+    "gleba": "solo"
+    }
+ 
+for key in pol_eng_dictionary:
+    print("Pol/Eng ->", key)
+
+# Imprime
+# Pol/Eng -> zamek
+# Pol/Eng -> woda
+# Pol/Eng -> gleba
+```
