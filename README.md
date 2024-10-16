@@ -1146,3 +1146,14 @@ a, b, c = tup
  
 print(a * b * c) # Imprime 6
 ```
+
+Podemos usar o **método** `count()` para contar o número de ocorrências de um valor em uma tupla:
+
+```
+tup = 1, 2, 3, 2, 4, 5, 6, 2, 7, 2, 8, 9
+ocurrences = tup.count(2)
+ 
+print(ocurrences) # saída: 4
+```
+
+Este método também existe em listas e funciona da mesta forma, mas não em dicionários.
