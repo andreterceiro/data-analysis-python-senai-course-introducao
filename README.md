@@ -882,3 +882,17 @@ print(a['um']) # Imprime 1
 print(a[1.1]) # Imprime "um ponto um"
 print(a['1']) # Key error
 ```
+
+Não podemos iterar diretamente em um dicionário, mas podemos usar o método `keys()`:
+
+```
+dictionary = {"gato": "chat", "cachorro": "chien", "cavalo": "cheval"}
+ 
+for key in dictionary.keys():
+    print(key, "->", dictionary[key])
+
+# Imprime
+# gato -> chat
+# cachorro -> chien
+# cavalo -> cheval
+```
