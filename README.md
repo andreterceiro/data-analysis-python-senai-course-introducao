@@ -1265,3 +1265,19 @@ print(list[0.5])
 # Saída
 # 1
 ```
+
+Não consegui tratar um Syntax error nem colocando `SyntaxError` ou colocando `Exception` para tentar capturar uma exceção. Veja que abaixo abri colchetes e fechei com uma chave:
+
+```
+try:
+    list = [1,2}
+    print(list[0.5])
+except SyntaxError:
+    print("Aqui !!")
+
+# Saída:
+# File "/srv/www/raiz/python/data-analysis-python-senai-course/teste.py", line 2
+#   list = [1,2}]
+#              ^
+# SyntaxError: closing parenthesis '}' does not match opening parenthesis '['
+```
