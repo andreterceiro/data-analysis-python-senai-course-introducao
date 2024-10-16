@@ -998,3 +998,12 @@ while True:
             counter += 1
         print(name, ":", adding / counter)
 ```
+
+Pode-se criar uma tupla com a função `tuple()`:
+
+```
+a = [1, 2]
+b = tuple(a)
+print(type(b)) # <class 'tuple'>
+print(b) # (1, 2)
+```
