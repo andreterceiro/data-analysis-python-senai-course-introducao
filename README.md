@@ -1135,3 +1135,14 @@ pol_eng_dictionary = {
  
 copy_dictionary = pol_eng_dictionary.copy()
 ```
+
+## Diversos
+
+Veja que forma interessante de fazer o desempacotamento de uma tupla:
+
+```
+tup = 1, 2, 3
+a, b, c = tup
+ 
+print(a * b * c) # Imprime 6
+```
