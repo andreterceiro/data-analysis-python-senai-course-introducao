@@ -896,3 +896,14 @@ for key in dictionary.keys():
 # cachorro -> chien
 # cavalo -> cheval
 ```
+
+Também temos o método `items()`:
+
+```
+dictionary = {"cat": "chat", "dog": "chien", "horse": "cheval"}
+ 
+for english, french in dictionary.items():
+    print(english, "->", french)
+```
+
+Podemos através deste método ter acesso à chave e ao valor.
