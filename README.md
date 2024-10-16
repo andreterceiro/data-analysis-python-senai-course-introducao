@@ -907,3 +907,12 @@ for english, french in dictionary.items():
 ```
 
 Podemos através deste método ter acesso à chave e ao valor.
+
+Existe também o método `values()`:
+
+```
+dictionary = {"gato": "chat", "cachorro": "chien", "cavalo": "cheval"}
+ 
+for french in dictionary.values():
+    print(french)
+```
