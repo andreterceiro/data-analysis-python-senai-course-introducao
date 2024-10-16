@@ -926,3 +926,18 @@ for french in dictionary.values():
 # chien
 # cheval
 ```
+
+Existe uma função (**não é um método**) sorted estranha, que, bem, ordena (kkkk) os valores de um dicionário e os retorna em uma lista:
+
+```
+dictionary = {"gato": "chat", "cachorro": "chien", "cavalo": "cheval"}
+ 
+print(dictionary)
+print(sorted(dictionary))
+print(type(sorted(dictionary)))
+
+# Imprime
+# {'gato': 'chat', 'cachorro': 'chien', 'cavalo': 'cheval'}
+# ['cachorro', 'cavalo', 'gato']
+# <class 'list'>
+```
