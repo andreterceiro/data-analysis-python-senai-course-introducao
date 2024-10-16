@@ -1339,3 +1339,12 @@ IDLE = Integrated Development and Learning Environment.
 [Link](https://docs.python.org/3/library/idle.html)
 
 Com esta IDLE dá para depurar o código mais facilmente, veja [estes printscreens](https://www.cs.uky.edu/~keen/help/debug-tutorial/debug.html).
+
+
+## Pytest
+
+Veja [a documentação](https://docs.pytest.org/en/stable/getting-started.html) para lembrar se esquecer. A instalação é simples com o `pip`. E executando o comando abaixo, obviamente (não esqueça !!!) executamos um teste com o `pytest`:
+
+```
+pytest hello_world_pytest.py
+```
