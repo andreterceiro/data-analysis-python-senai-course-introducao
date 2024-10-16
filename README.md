@@ -1123,3 +1123,15 @@ print(len(pol_eng_dictionary)) # saídas: 0
  
 del pol_eng_dictionary # remove o dicionário
 ```
+
+Existe também o método `copy()`:
+
+```
+pol_eng_dictionary = {
+    "zamek": "castelo",
+    "woda": "água",
+    "gleba": "solo"
+    }
+ 
+copy_dictionary = pol_eng_dictionary.copy()
+```
