@@ -1032,3 +1032,16 @@ print(item_2) # saídas: água
 ```
 
 Mas podemos obter os dados no formato `dicionario[chave]` como fazemos no caso de listas ou tuplas.
+
+Podemos usar os métodos `update()` para inserir ou atualizar um item e o método `popitem()` para excluir um item.
+
+```
+pol_eng_dictionary = {"kwiat": "flor"}
+ 
+pol_eng_dictionary.update({"gleba": "banana"})
+pol_eng_dictionary.update({"gleba": "solo"})
+print(pol_eng_dictionary) # saídas: {'kwiat': 'flor', 'gleba': 'solo'}
+ 
+pol_eng_dictionary.popitem()
+print(pol_eng_dictionary) # saídas: {'kwiat': 'flor'}
+```
