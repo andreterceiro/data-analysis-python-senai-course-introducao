@@ -999,6 +999,9 @@ while True:
         print(name, ":", adding / counter)
 ```
 
+
+## Comentários diversos
+
 Pode-se criar uma tupla com a função `tuple()`:
 
 ```
@@ -1006,4 +1009,24 @@ a = [1, 2]
 b = tuple(a)
 print(type(b)) # <class 'tuple'>
 print(b) # (1, 2)
+```
+
+Existe também a função `list()`, de finalidade óbvia e semelhante à `tuple()`
+
+Desde o Python 3.6x os dicionários passaram a ser ordenados por padrão.
+
+Dicionários tem o método `get()`:
+
+```
+pol_eng_dictionary = {
+    "kwiat": "flor",
+    "woda": "água",
+    "gleba": "solo"
+    }
+ 
+item_1 = pol_eng_dictionary["gleba"] # ex. 1
+print(item_1) # saídas: solo
+ 
+item_2 = pol_eng_dictionary.get("woda") # ex. 2
+print(item_2) # saídas: água
 ```
