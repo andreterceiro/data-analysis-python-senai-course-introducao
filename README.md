@@ -1214,3 +1214,5 @@ finally:
 #   raise ValueError("erro")
 # ValueError: erro
 ```
+
+Outra coisa que pode ser vista no trecho acima é que é posso lançar uma exceção com o `raise`.
