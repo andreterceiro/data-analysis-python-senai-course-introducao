@@ -1104,3 +1104,22 @@ else:
 # Sim
 # Não
 ```
+
+Podemos usar o método `clear()` para apagar **todos** os itens de um dicionário:
+
+```
+pol_eng_dictionary = {
+    "zamek": "castelo",
+    "woda": "água",
+    "gleba": "solo"
+    }
+ 
+print(len(pol_eng_dictionary)) # saídas: 3
+del pol_eng_dictionary["zamek"] # remover um item
+print(len(pol_eng_dictionary)) # saídas: 2
+ 
+pol_eng_dictionary.clear() # remove todos os itens
+print(len(pol_eng_dictionary)) # saídas: 0
+ 
+del pol_eng_dictionary # remove o dicionário
+```
