@@ -1218,3 +1218,50 @@ finally:
 Outra coisa que pode ser vista no trecho acima é que é posso lançar uma exceção com o `raise`.
 
 [Esta aula](https://www.netacad.com/launch?id=ea83e02f-1c92-484b-bb2a-81f274fb44e8&tab=curriculum&view=715e4004-5394-58a2-8279-c1af23b595d3) comenta um pouco sobre algumas exceções e quando usar.
+
+
+Algumas formas de forçar o lançamento de uma exceção:
+
+- Dividindo por zero (ZeroDivisionError);
+- Usando um método que não existe (AttribueError). Como `short_list.depend(3)`. Podemos tratar este erro e seguir o fluxo do programa, veja:
+
+```
+try:
+    short_list = [1]
+    short_list.append(2)
+    print(short_list)
+    short_list.append(3)
+    short_list.depend(4)
+except Exception:
+    print("Exception !")
+
+print(short_list)
+
+# Saída:
+# [1, 2]
+# Exception !
+# [1, 2, 3]
+```
+
+- Usando um índice de ponto flutuante (TypeError):
+
+```
+list = [1,2]
+print(list[0.5])
+
+# Saída:
+# Traceback (most recent call last):
+#   File "/srv/www/raiz/python/data-analysis-python-senai-course/teste.py", line 2, in <module>
+#     print(list[0.5])
+# TypeError: list indices must be integers or slices, not float
+
+# Tataríamos esta exceção por exempĺo assim:
+# try:
+#     list = [1,2]
+#     print(list[0.5])
+# except Exception:
+#     print((list[0]))
+#
+# Saída
+# 1
+```
