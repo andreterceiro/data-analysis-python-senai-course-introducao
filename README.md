@@ -953,3 +953,20 @@ print(dictionary)
 # Imprime
 # {'gato': 'chat', 'cachorro': 'chien', 'cavalo': 'cheval', 'swan': 'cygne'}
 ```
+
+Vamos abaixo relembrar a keyword `del` aplicada a listas e mostrar o funcionamento em dicionários:
+
+```
+dictionary = {"gato": "chat", "cachorro": "chien", "cavalo": "cheval"}
+ 
+del dictionary['cachorro']
+print(dictionary) # Imprime {'gato': 'chat', 'cavalo': 'cheval'}
+ 
+lst = [1,2,3,4]
+
+del lst[2]
+
+print(lst) # Imprime [1, 2, 4]
+```
+
+No caso de listas e dicionários, temos que especificar a chave. Mas no caso de listas podemos ter indicado a chave (por exemplo com o método insert(chave, valor)) ou não (por exemplo com o metodo append(valor)).
