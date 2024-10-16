@@ -1300,3 +1300,33 @@ except NameError:
 # Saída "normal se o usuário digitar um valor maior ou igual a zero
 # Se o usuário digitar um vaor negativo a saída é 'Exception !!', ou seja, eu consigo tratar este NameError.
 ```
+
+Podemos testar com um SyntaxError do exemplo anterior:
+
+```
+temperature = float(input('Digite a temperatura atual:'))
+a = [1, 2]
+
+try:
+    if temperature > 0:
+        a.append(3)
+    elif temperature < 0:
+        a.append(4}
+    else:
+        a.append(5)
+except SyntaxError:
+    print("Exception !!")
+finally:
+    print(a)
+```
+
+Não se importe com o fato de existir um input e uma variável a separados, entenda apenas que a saída ao executar o programa é a abaixo já ao executar este programa, ou seja, eu não consigo tratar este erro da forma que fiz acima:
+
+```
+  File "/srv/www/raiz/python/data-analysis-python-senai-course/teste.py", line 8
+    a.append(4}
+              ^
+SyntaxError: closing parenthesis '}' does not match opening parenthesis '('
+```
+
+Sobre [capturar um syntax error](https://stackoverflow.com/questions/25049498/failed-to-catch-syntax-error-python).
