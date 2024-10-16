@@ -1281,3 +1281,22 @@ except SyntaxError:
 #              ^
 # SyntaxError: closing parenthesis '}' does not match opening parenthesis '['
 ```
+
+Este comportamento é interessante, vejamos o funcionamento neste código que gera um `NameError` quando o usuário insere um valor negativo:
+
+```
+temperature = float(input('Digite a temperatura atual:'))
+
+try:
+    if temperature > 0:
+        print("Acima de zero")
+    elif temperature < 0:
+        prin("Abaixo de zero")
+    else:
+        print("Zero")
+except NameError:
+    print("Exception !!")
+
+# Saída "normal se o usuário digitar um valor maior ou igual a zero
+# Se o usuário digitar um vaor negativo a saída é 'Exception !!', ou seja, eu consigo tratar este NameError.
+```
