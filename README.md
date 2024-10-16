@@ -1186,3 +1186,31 @@ print(
     )
 )
 ```
+
+
+## Exceções
+
+```
+try:
+    1/0
+except ZeroDivisionError:
+    print("Exception")
+finally:
+    print("Finally")
+
+try:
+    raise ValueError("erro")
+except ZeroDivisionError:
+    print("Exception")
+finally:
+    print("Finally")
+
+# Saída
+# Exception
+# Finally
+# Finally
+# Traceback (most recent call last):
+#   File "/srv/www/raiz/python/data-analysis-python-senai-course/teste.py", line 9, in <module>
+#   raise ValueError("erro")
+# ValueError: erro
+```
