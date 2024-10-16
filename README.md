@@ -1216,3 +1216,5 @@ finally:
 ```
 
 Outra coisa que pode ser vista no trecho acima é que é posso lançar uma exceção com o `raise`.
+
+[Esta aula](https://www.netacad.com/launch?id=ea83e02f-1c92-484b-bb2a-81f274fb44e8&tab=curriculum&view=715e4004-5394-58a2-8279-c1af23b595d3) comenta um pouco sobre algumas exceções e quando usar.
