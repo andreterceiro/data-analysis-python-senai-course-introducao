@@ -1344,7 +1344,14 @@ while True:
         print("Valor errado ou nenhuma divisão por regra de zero quebrada.")
     except:
         print("Desculpe, algo deu errado...")
-``
+```
+
+Uma curiosidade interessante é que o trecho abaixo, que não esá fazendo o cast para int, gera um `TypeError` e não um `ZeroDivisionError` se o usuário entrar com um "0":
+
+```
+value = input("Entre um valor: ")
+print(10/value)
+```
 
 ## IDLE
 
