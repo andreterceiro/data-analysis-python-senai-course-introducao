@@ -1330,3 +1330,10 @@ SyntaxError: closing parenthesis '}' does not match opening parenthesis '('
 ```
 
 Sobre [capturar um syntax error](https://stackoverflow.com/questions/25049498/failed-to-catch-syntax-error-python).
+
+
+## IDLE
+
+IDLE = Integrated Development and Learning Environment.
+
+[Link](https://docs.python.org/3/library/idle.html)
