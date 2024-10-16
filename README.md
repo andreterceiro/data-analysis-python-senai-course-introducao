@@ -1152,8 +1152,37 @@ Podemos usar o **método** `count()` para contar o número de ocorrências de um
 ```
 tup = 1, 2, 3, 2, 4, 5, 6, 2, 7, 2, 8, 9
 ocurrences = tup.count(2)
- 
+
 print(ocurrences) # saída: 4
 ```
 
 Este método também existe em listas e funciona da mesta forma, mas não em dicionários.
+
+Para transformar uma tupla (por exemplo) em um dicionário existe a função `dict()`:
+
+```
+print(
+    dict(
+        (
+            ("idade",42), 
+            ("nome", "André")
+        )
+    )
+)
+
+# Saída:
+# {'idade': 42, 'nome': 'André'}
+```
+
+A tupla precisa ser uma tupla com tuplas de 2 elementos. Se colocar 3, como abaixo, ou até 1 ou 4,ocorre um erro:
+
+```
+print(
+    dict(
+        (
+            ("idade", 42, 42), 
+            ("nome", "André")
+        )
+    )
+)
+```
