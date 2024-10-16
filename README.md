@@ -904,6 +904,11 @@ dictionary = {"cat": "chat", "dog": "chien", "horse": "cheval"}
  
 for english, french in dictionary.items():
     print(english, "->", french)
+
+# Imprime
+# cat -> chat
+# dog -> chien
+# horse -> cheval
 ```
 
 Podemos através deste método ter acesso à chave e ao valor.
@@ -915,4 +920,9 @@ dictionary = {"gato": "chat", "cachorro": "chien", "cavalo": "cheval"}
  
 for french in dictionary.values():
     print(french)
+
+# Imprime
+# chat
+# chien
+# cheval
 ```
