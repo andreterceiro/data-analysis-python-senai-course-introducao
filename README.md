@@ -1045,3 +1045,21 @@ print(pol_eng_dictionary) # saídas: {'kwiat': 'flor', 'gleba': 'solo'}
 pol_eng_dictionary.popitem()
 print(pol_eng_dictionary) # saídas: {'kwiat': 'flor'}
 ```
+
+Podemos usar o método `items()` para ter acesso aos itens em uma iteração "for":
+
+```
+pol_eng_dictionary = {
+    "zamek": "castelo",
+    "woda": "água",
+    "gleba": "solo"
+    }
+ 
+for key, value in pol_eng_dictionary.items():
+    print("Pol/Eng ->", key, ":", value)
+
+# Imprime
+# Pol/Eng -> zamek : castelo
+# Pol/Eng -> woda : água
+# Pol/Eng -> gleba : solo
+```
