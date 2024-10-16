@@ -941,3 +941,15 @@ print(type(sorted(dictionary)))
 # ['cachorro', 'cavalo', 'gato']
 # <class 'list'>
 ```
+
+Veja o *snippet* abaixo. Podemos adicionar um valor novo a um dicionário citando uma chave nova, **lembre-se que isto não funciona para listas. Em listas temos que usar métodos como insert() ou append()**:
+
+```
+dictionary = {"gato": "chat", "cachorro": "chien", "cavalo": "cheval"}
+ 
+dictionary['cisne'] = 'swan'
+print(dictionary)
+
+# Imprime
+# {'gato': 'chat', 'cachorro': 'chien', 'cavalo': 'cheval', 'swan': 'cygne'}
+```
