@@ -1337,3 +1337,5 @@ Sobre [capturar um syntax error](https://stackoverflow.com/questions/25049498/fa
 IDLE = Integrated Development and Learning Environment.
 
 [Link](https://docs.python.org/3/library/idle.html)
+
+Com esta IDLE dá para depurar o código mais facilmente, veja [estes printscreens](https://www.cs.uky.edu/~keen/help/debug-tutorial/debug.html).
