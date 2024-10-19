@@ -1377,5 +1377,5 @@ Uma verificação interessante  que fiz é nesta construção de Python:
 
 ```
 print([j for j in [2,3] for x in [0,1,2]])
-# [2, 2, 2, 3, 3, 3]
+# Imprime [2, 2, 2, 3, 3, 3]
 ```
