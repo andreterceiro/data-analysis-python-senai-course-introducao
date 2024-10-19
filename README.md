@@ -159,6 +159,8 @@ O formato é `[start: end]`, mas **end** é o primeiro elemento **não** incluso
 
 No fatiamento podemos até trabalhar com números negativos. Números negativos fazem a contagem de elementos da lista de trás para frente. **-1** refere-se ao último elemento, mas lembre-se, **o último elemento não é incluído no retorno.**
 
+Isto é **muito** importante memorizar. Tanto na função **range()** quando é passado o final (fornecido valores para pelo menos 2 argumentos) quanto no fatimanto, o final **não** é incluso.
+
 Exemplos:
 
 ```
