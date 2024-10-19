@@ -1369,3 +1369,13 @@ Veja [a documentação](https://docs.pytest.org/en/stable/getting-started.html) 
 ```
 pytest hello_world_pytest.py
 ```
+
+
+# Verificações finais
+
+Uma verificação interessante  que fiz é nesta construção de Python:
+
+```
+print([j for j in [2,3] for x in [0,1,2]])
+# [2, 2, 2, 3, 3, 3]
+```
