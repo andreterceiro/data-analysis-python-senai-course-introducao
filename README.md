@@ -1381,3 +1381,12 @@ Uma verificação interessante  que fiz é nesta construção de Python:
 print([j for j in [2,3] for x in [0,1,2]])
 # Imprime [2, 2, 2, 3, 3, 3]
 ```
+
+Posso concatenar duas listas assim:
+
+```
+items = [0, 1] + [5, 0]
+```
+
+Isto **não** funciona para tuplas.
+
